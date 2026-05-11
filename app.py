@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from Inverted_Indexing import NLTKInvertedIndex
-
+import os
 app = Flask(__name__)
 
 # Load the index into memory when the server starts
@@ -33,5 +33,6 @@ def do_search():
     return jsonify({"query": query, "results": response_data})
 
 if __name__ == '__main__':
-    # Bind to 0.0.0.0 so Coolify can route traffic to it
-    app.run(host='0.0.0.0', port=8080)
+    # Grab the port from Coolify, defaulting to 8080 if not set
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
