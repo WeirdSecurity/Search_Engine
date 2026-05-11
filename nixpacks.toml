@@ -12,5 +12,4 @@ cmds = [
 ]
 
 [start]
-# This points to your search script, but read Step 2 below!
-cmd = "/opt/venv/bin/python run_search.py"
+cmd = "/opt/venv/bin/python app.py"
