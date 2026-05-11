@@ -5,10 +5,6 @@ Here is a comprehensive and visually appealing `README.md` file tailored specifi
 ```markdown
 # 🔍 WeirdSecurity Search Engine
 
-![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
-
 A lightweight, custom-built Web Scraper and Search Engine written entirely in Python. This project utilizes Natural Language Processing (NLP) to crawl web pages, extract metadata, and build a highly efficient inverted index for rapid, ranked text searching.
 
 ---
