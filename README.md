@@ -114,7 +114,3 @@ To host this as a web service, wrap the `Inverted_Indexing` logic in a lightweig
 ---
 
 *Built with ❤️ by [WeirdSecurity*](https://github.com/WeirdSecurity)
-
-```
-
-```
