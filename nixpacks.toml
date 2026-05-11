@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ["python311", "gcc"]
+
+[phases.install]
+cmds = ["python -m venv /opt/venv && /opt/venv/bin/pip install -r requirements.txt"]
+
+[phases.build]
+# Download the required NLTK tokenizers and corpuses
+cmds = [
+    "/opt/venv/bin/python -m nltk.downloader punkt", 
+    "/opt/venv/bin/python -m nltk.downloader stopwords"
+]
+
+[start]
+# This points to your search script, but read Step 2 below!
+cmd = "/opt/venv/bin/python run_search.py"
